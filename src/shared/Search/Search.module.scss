@@ -1,0 +1,30 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    position: relative;
+
+    input {
+      padding: 8px 26px 8px 8px;
+      border-radius: 8px 0 0 8px;
+      font-size: 18px;
+    }
+
+    span {
+      position: absolute;
+      font-size: 28px;
+      left: 88%;
+      bottom: 25%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  button {
+    border-radius: 0 8px 8px 0;
+  }
+}

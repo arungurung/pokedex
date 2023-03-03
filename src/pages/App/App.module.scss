@@ -1,0 +1,71 @@
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+  .render {
+    margin: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: grid;
+    width: 100%;
+    gap: 16px;
+    margin-top: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+    .pokemon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 8px 8px;
+      margin-top: 32px;
+      text-transform: capitalize;
+      position: relative;
+      border-radius: 8px;
+      border: 1px solid white;
+
+      span {
+        position: absolute;
+        left: 84%;
+        bottom: 80%;
+        background-color: antiquewhite;
+        color: brown;
+        padding: 4px;
+        line-height: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 4px;
+      }
+
+      img {
+        position: absolute;
+        bottom: 60%;
+      }
+
+      .name {
+        font-size: 18px;
+      }
+
+      &:hover {
+        background-color: darkgray;
+        border-radius: 4px;
+        cursor: pointer;
+        color: black;
+      }
+    }
+  }
+
+  .navigation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
